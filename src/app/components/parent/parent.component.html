@@ -1,0 +1,6 @@
+<h2>Hello Parent</h2>
+<p><strong> sending data to child</strong>{{ParentsData}}</p>
+
+<app-child  [message]="ParentsData" (response)="childResponse($event)" ></app-child>
+
+<p>child response {{childReply}}</p>

@@ -1,27 +1,31 @@
-# AngularBasics
+# 🔧 Angular Components Basics
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+This project demonstrates the **fundamentals of Angular components**, including how they communicate using `@Input()` and `@Output()` decorators. It's ideal for beginners who want to learn how component architecture works in Angular.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📌 Concepts Covered
 
-## Code scaffolding
+- ✅ Creating Angular components
+- ✅ Using `@Input()` to pass data from parent to child
+- ✅ Using `@Output()` with `EventEmitter` to send data from child to parent
+- ✅ Property binding and event binding
+- ✅ Basic component styling
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🖥️ Demo Use Case: Parent-Child Message Passing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Use Case Example:**  
+A parent component sends a message to the child, and the child sends a response back.
 
-## Running unit tests
+**UI Flow:**
+- Parent sends message via `@Input()`
+- Child receives and displays it
+- Child sends reply back via `@Output()` event
+- Parent listens and displays child response
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🏗️ Project Structure
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
